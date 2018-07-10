@@ -227,7 +227,7 @@ function updateCertStatus() {
       var inPrivateBrowsing = inPrivateBrowsingMode();
       var pe = document.getElementById("permanent");
       pe.disabled = inPrivateBrowsing;
-      pe.checked = !inPrivateBrowsing;
+      pe.checked = false;
 
       setText("headerDescription", gPKIBundle.getString("addExceptionInvalidHeader"));
     } else {
